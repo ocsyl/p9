@@ -15,6 +15,46 @@
       "type": "http",
       "direction": "out",
       "name": "$return"
+    },
+    {
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "in",
+      "name": "model",
+      "path": "recommend/cf_model.pkl",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "in",
+      "name": "artcf",
+      "path": "datas/list_articles_cf.pkl",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "in",
+      "name": "artemb",
+      "path": "datas/articles_embeddings.pkl",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "in",
+      "name": "click",
+      "path": "datas/clicks.pkl",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "dataType": "binary",
+      "direction": "in",
+      "name": "newart",
+      "path": "datas/list_new_articles.pkl",
+      "connection": "AzureWebJobsStorage"
     }
   ]
 }
